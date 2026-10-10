@@ -1,7 +1,7 @@
 // Rule 05. Object Orientation (OBJ) - OBJ01-J
 
 public class Widget {
-    public int total;
+    private int total;
 
     void add() {
         if (total < Integer.MAX_VALUE) {
@@ -9,5 +9,8 @@ public class Widget {
         } else {
             throw new ArithmeticException("Overflow");
         }
+    }
+    public int getTotal() {
+        return total;
     }
 }
